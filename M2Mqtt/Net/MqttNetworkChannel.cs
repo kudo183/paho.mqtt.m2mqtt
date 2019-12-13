@@ -14,6 +14,10 @@ Contributors:
    Paolo Patierno - initial API and implementation and/or initial documentation
 */
 
+#if (NETSTANDARD1_6 || NETSTANDARD2_0)
+#define SSL
+#endif
+
 #if SSL
 #if (MF_FRAMEWORK_VERSION_V4_2 || MF_FRAMEWORK_VERSION_V4_3)
 using Microsoft.SPOT.Net.Security;
